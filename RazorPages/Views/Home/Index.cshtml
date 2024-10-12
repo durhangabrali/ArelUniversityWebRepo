@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Razgor Pages Öğreniyorum</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<hr/>
+<h1> @("Merhaba Razor Pages")</h1>
+<br>
+<h2>Bu zaman bilgisi sunucu tarafından elde edilmiştir : @DateTime.Now </h2>
+
+<div>
+    @{
+        string ad = "Arel";
+        string soyad = "Üniversitsi";
+        @ad <br>
+        @soyad; <br>
+        @(ad + " " + soyad)
+    }
+</div>
+
+<div>
+    @{
+       @:Meslek Yüksekokulu <br>
+       @("Bilgisayar Programcılığı")
+    }
+
+</div>
+<!-- Bu açıklama satırı HTML ile yazıldı -->
+@* bu açıklama satırı Razor ile yazıldı *@
+@* Birinci açıklma satırı
+   İkinci açıklama satırı
+   Üçüncü açıklama satırı *@
+<hr>
+
+@{
+    string[] kategoriler = new string[4]{"Bilgisayar", "Çamaşır Makinesi", "Bulaşık Makine","Telefon"};
+    
+    int index = 0;
+
+    <ul>
+    
+    @foreach(string kategori in kategoriler)
+    {
+        if(index % 2 == 0)
+        {
+           <li><strong>@kategori</strong></li>
+        }
+        else
+        {
+           <li>@kategori</li>
+        }      
+
+        index++;
+    }
+    </ul>
+}
+
+<div>
+   @for(int i=0 ; i<10; i++)
+   {
+      @("Sayı :" + i.ToString())  <BR>
+   }
+</div>
+
+<hr>
+<h1> HTML Helper Örneği</h1>
+<div>
+    @Html.ActionLink("Ana Sayfa", "index","Home")
+    <br>
+    @Html.TextBox("text1","Adınızı giriniz")
+    <br>
+    @Html.TextArea("textarea1","Özgeçmiş yazınız",8,30,null)
+</div>
