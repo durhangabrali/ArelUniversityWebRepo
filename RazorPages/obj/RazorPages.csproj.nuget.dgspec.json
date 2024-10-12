@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\mvc\\RazorPages\\RazorPages.csproj": {}
+    "E:\\GitHub\\ArelUniversityWebRepo\\RazorPages\\RazorPages.csproj": {}
   },
   "projects": {
-    "C:\\mvc\\RazorPages\\RazorPages.csproj": {
+    "E:\\GitHub\\ArelUniversityWebRepo\\RazorPages\\RazorPages.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\mvc\\RazorPages\\RazorPages.csproj",
+        "projectUniqueName": "E:\\GitHub\\ArelUniversityWebRepo\\RazorPages\\RazorPages.csproj",
         "projectName": "RazorPages",
-        "projectPath": "C:\\mvc\\RazorPages\\RazorPages.csproj",
-        "packagesPath": "C:\\Users\\B109-01\\.nuget\\packages\\",
-        "outputPath": "C:\\mvc\\RazorPages\\obj\\",
+        "projectPath": "E:\\GitHub\\ArelUniversityWebRepo\\RazorPages\\RazorPages.csproj",
+        "packagesPath": "C:\\Users\\durhangabrali\\.nuget\\packages\\",
+        "outputPath": "E:\\GitHub\\ArelUniversityWebRepo\\RazorPages\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\B109-01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\durhangabrali\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
