@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArelAkademi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ae88aa0a56a3a8125a905b503780961f1a68cd8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e349b7c65a03b9a5d8567b95efdfd9327725b844")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArelAkademi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArelAkademi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
