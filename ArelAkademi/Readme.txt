@@ -1,0 +1,3 @@
+Bu uygulama 3. ve 4.hafta yapılmıştır. Kurs kayıt başvurusu alan, başvuru formunda validasyon yapan, başvuru verileri In-Memory olarak tutan, kurs anasayfasında başvuruları listeleyen küçük bir uygulama geliştirilmiştir.
+
+(This application was made in the 3rd and 4th weeks. A small application was developed that received course registration applications, validated the application form, kept the application data as In-Memory, and listed the applications on the course homepage.)
