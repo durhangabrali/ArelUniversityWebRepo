@@ -1,0 +1,51 @@
+﻿@model string[]
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-6">Data Transport From Controller To View</h1>    
+</div>
+
+<div>
+    <hr />
+    <b>Üniversite : </b> @ViewData["text1"]
+    <br />
+    <b>Faal Mı :</b> @ViewData["check1"].ToString()
+    <hr />
+</div>
+<div>
+    <b>Ad - Soyad : </b>@ViewBag.text2
+    <br />
+    <b>Aktif Mı :</b> @ViewBag.check2
+    <hr />
+</div>
+<div>
+    <b>Bölüm : </b>@TempData["text3"]
+    <br />
+    <b>Kayıtlı Mı : </b> @TempData["check3"]
+    <hr />
+</div>
+<div>
+    @*ViewBag ile gönderilen verileri View’da HTML Helper ile yakalayıp HTML kontrolleri üzerinde gösterebiliriz.*@
+    <b>Ad-Soyad Giriniz : </b>@Html.TextBox("text4")
+    <br />
+    <b>Kayıtlı Mı : </b> @Html.CheckBox("check4")
+    <br />
+    <b>Dersler : </b> @Html.DropDownList("list1")
+    <br />
+    @Html.ActionLink("Contact Page","Contact")
+    <hr />
+</div>
+<div>
+    <h2>Kurslar</h2>
+    <ul>
+        @foreach(var kurs in Model)
+        {
+            <li>
+                @kurs
+            </li>
+        }
+    </ul>
+</div>
+
