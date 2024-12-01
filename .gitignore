@@ -3,3 +3,12 @@
 ################################################################################
 
 /DataTransport/DataTransport/.gitignore
+/ArelAkademi/.gitignore
+/Banzhow/.gitignore
+/DataTransport/.gitignore
+/ProductsApp/.gitignore
+/Store/Entities/.gitignore
+/Store/Repositories/.gitignore
+/Store/Services/.gitignore
+/Store/StoreApp/.gitignore
+/Store/.gitignore
