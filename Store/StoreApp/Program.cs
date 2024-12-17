@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns;
 using Repositories;
 using Repositories.Contracts;
 using Services;
@@ -8,10 +9,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<RepositoryContext>(options => 
+builder.Services.AddDbContext<RepositoryContext>(options =>
 {
-   options.UseSqlite(builder.Configuration.GetConnectionString("sqlconnection"),
-   b => b.MigrationsAssembly("StoreApp"));
+    options.UseSqlite(builder.Configuration.GetConnectionString("sqlconnection"),
+    b => b.MigrationsAssembly("StoreApp"));
 });
 
 builder.Services.AddScoped<IRepositoryManager, RepositoryManager>();
@@ -29,8 +30,21 @@ app.UseStaticFiles();
 app.UseHttpsRedirection();
 app.UseRouting();
 
-app.MapControllerRoute(
-    name:"default",
-    pattern:"{Controller=Home}/{action=Index}/{id?}");
+#pragma warning disable ASP0014 // Suggest using top level route registrations
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapAreaControllerRoute(
+        name: "Admin",
+        areaName : "Admin",
+        pattern: "Admin/{Controller=Dashboard}/{action=Index}/{id?}"
+        );
+
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{Controller=Home}/{action=Index}/{id?}"
+        );       
+       
+});
+#pragma warning restore ASP0014 // Suggest using top level route registrations
 
 app.Run();
