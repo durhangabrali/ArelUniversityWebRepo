@@ -9,8 +9,96 @@
       "PackagePath": "staticwebassets\\html\\Error.html"
     },
     {
-      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\default.JPG",
-      "PackagePath": "staticwebassets\\images\\default.JPG"
+      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\1.jpg"
+    },
+    {
+      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\10.jpg",
+      "PackagePath": "staticwebassets\\images\\10.jpg"
+    },
+    {
+      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\11.jpg",
+      "PackagePath": "staticwebassets\\images\\11.jpg"
+    },
+    {
+      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\12.jpg",
+      "PackagePath": "staticwebassets\\images\\12.jpg"
+    },
+    {
+      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\13.jpg",
+      "PackagePath": "staticwebassets\\images\\13.jpg"
+    },
+    {
+      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\14.jpg",
+      "PackagePath": "staticwebassets\\images\\14.jpg"
+    },
+    {
+      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\15.jpg",
+      "PackagePath": "staticwebassets\\images\\15.jpg"
+    },
+    {
+      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\2.jpg"
+    },
+    {
+      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\3.jpg"
+    },
+    {
+      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\35b8966b-27ae-4207-b93c-a28783fc28bc.jpg",
+      "PackagePath": "staticwebassets\\images\\35b8966b-27ae-4207-b93c-a28783fc28bc.jpg"
+    },
+    {
+      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\4.jpg"
+    },
+    {
+      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\5.jpg"
+    },
+    {
+      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\6.jpg"
+    },
+    {
+      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\7.jpg"
+    },
+    {
+      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\78d96d09-17f5-458b-a703-f84b5a77e640..jpg",
+      "PackagePath": "staticwebassets\\images\\78d96d09-17f5-458b-a703-f84b5a77e640..jpg"
+    },
+    {
+      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\8.jpg"
+    },
+    {
+      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\9.jpg",
+      "PackagePath": "staticwebassets\\images\\9.jpg"
+    },
+    {
+      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\_default.JPG",
+      "PackagePath": "staticwebassets\\images\\_default.JPG"
+    },
+    {
+      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\berlin-alexanderplatz.jpg",
+      "PackagePath": "staticwebassets\\images\\berlin-alexanderplatz.jpg"
+    },
+    {
+      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\default.jpg",
+      "PackagePath": "staticwebassets\\images\\default.jpg"
+    },
+    {
+      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\hp-computer.jpg",
+      "PackagePath": "staticwebassets\\images\\hp-computer.jpg"
+    },
+    {
+      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\mouse.jpg",
+      "PackagePath": "staticwebassets\\images\\mouse.jpg"
+    },
+    {
+      "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\images\\sons-and-lovers.jpg",
+      "PackagePath": "staticwebassets\\images\\sons-and-lovers.jpg"
     },
     {
       "Id": "C:\\MVC\\Store\\StoreApp\\wwwroot\\js\\site.js",

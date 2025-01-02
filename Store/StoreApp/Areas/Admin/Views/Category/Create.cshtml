@@ -1,0 +1,29 @@
+@model CategoryDtoForInsertion
+
+<div class="text-center">
+    <div class="display-6">Add New Category</div>
+</div>
+
+<form method="post" asp-action="Create" enctype="multipart/form-data">
+
+    <div class="text-danger" asp-validation-summary="All"></div>   
+
+    <div class="form-group my-3">
+        <label asp-for="CategoryName"></label>
+        <input asp-for="CategoryName" class="form-control"/>
+    </div>
+
+    <div class="form-group my-3">
+        <div class="btn-group">
+            <button class="btn btn-primary" type="submit">
+                <i class="fa fa-save"></i>
+                 Save
+             </button>
+             <a asp-action="Index" class="btn btn-outline-primary">
+                <i class="fa fa-list"></i>
+                 Back to Categories
+             </a>
+        </div>
+        
+    </div>
+</form>

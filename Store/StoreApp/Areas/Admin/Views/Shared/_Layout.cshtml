@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="~/css/site.css"/>
-    <link rel="stylesheet" href="~/lib/font-awesome/css/all.css"/>    
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.css"/>   
 </head>
 <body>
     <header>  
@@ -29,6 +29,19 @@
     <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="~/root/js/site.js"></script>
     <script src="~/lib/font-awesome/js/all.min.js"></script>
+    <script>
+       function showConfirmationModal(message, confirmCallback) {
+            $('#confirmationMessage').text(message);
+            $('#confirmationModal').modal('show');
+
+            $('#confirmButton').off('click').on('click', function() {
+                $('#confirmationModal').modal('hide');
+                if (confirmCallback) {
+                    confirmCallback();
+                }
+            });
+        }
+    </script> 
 
     @await RenderSectionAsync("Scripts", required:false)
     

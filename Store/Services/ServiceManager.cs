@@ -6,6 +6,7 @@ namespace Services
     {
         private readonly IProductService _productServices;
         private readonly ICategoryService _categoryService;
+        
         public ServiceManager(IProductService productService, ICategoryService categoryService)
         {
             _productServices = productService;

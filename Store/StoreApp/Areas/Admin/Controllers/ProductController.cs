@@ -1,11 +1,15 @@
 using System.ComponentModel.DataAnnotations;
+using Entities.Dtos;
 using Entities.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Services.Contracts;
 
 namespace StoreApp.Areas.Admin.Controllers
 {
-     [Area("Admin")]
+    [Area("Admin")]
     public class ProductController : Controller
     {
         private readonly IServiceManager _manager;
@@ -24,37 +28,85 @@ namespace StoreApp.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult Create()
         {
+            ViewBag.Categories = GetCategoriesSelectList();
             return View();
+        }
+
+        private SelectList GetCategoriesSelectList()
+        {
+            return new SelectList(_manager.CategoryService.GetAllCategories(false),"CategoryId","CategoryName","1");
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([FromForm] Product product)
+        public async Task<IActionResult> Create([FromForm] ProductDtoForInsertion productDto, IFormFile? file)
         {
             if(ModelState.IsValid)
             {
-                _manager.ProductService.CreateProduct(product);
+                if(file is not null)
+                {
+                    var guid = Guid.NewGuid().ToString();  
+                    string ext = Path.GetExtension(file.FileName);
+                    // file copy operation -----------------------------------                    
+                    string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot","images", String.Concat(guid,ext));
+                    using(var stream = new FileStream(path,FileMode.Create))
+                    {
+                        await file.CopyToAsync(stream);
+                    }
+                    //------------------------------------------------------
+                                  
+                    
+                    productDto.ImageUrl = String.Concat("/images/", String.Concat(guid,ext));
+                }
+                else
+                {
+                    productDto.ImageUrl ="/images/default.jpg";
+                }
+                
+                _manager.ProductService.CreateProduct(productDto);
                 return RedirectToAction("Index");
             }
             return View();
         }
 
+        [HttpGet]
         public IActionResult Update([FromRoute(Name="id")] int id)
         {
-            var model = _manager.ProductService.GetOneProduct(id,false);
-            return View(model);
+           ViewBag.Categories = GetCategoriesSelectList();
+           var model = _manager.ProductService.GetOneProductForUpdate(id,false);
+           return View(model);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Update(Product product)
+        public async Task<IActionResult> Update([FromForm] ProductDtoForUpdate productDto, IFormFile? file)
         {
-             if(ModelState.IsValid)
+            
+            if(ModelState.IsValid)
             {
-                _manager.ProductService.UpdateOneProduct(product);
-                 return RedirectToAction("Index");
+                if(file is not null)
+                {
+                    var guid = Guid.NewGuid().ToString(); 
+                    string ext = Path.GetExtension(file.FileName);
+                    // file operation -------------------------------------
+                    string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot","images",String.Concat(guid,ext));
+                    using(var stream = new FileStream(path,FileMode.Create))
+                    {
+                        await file.CopyToAsync(stream);
+                    }
+                    productDto.ImageUrl = String.Concat("/images/",String.Concat(guid,ext));
+                    // -----------------------------------------------------
+                }
+                else
+                {
+                    productDto.ImageUrl ="/images/default.jpg";
+                }                
+                
+                _manager.ProductService.UpdateOneProduct(productDto);
+                
+                return RedirectToAction("Index");
              }
-            return View();
+            return View(); 
         }
 
         public IActionResult Delete([FromRoute(Name = "id")] int id)

@@ -16,9 +16,9 @@ namespace Repositories
             _categoryRepository = categoryRepository;
         }
 
-        public IProductRepository Product => _productRepository;
+        public IProductRepository ProductRepository => _productRepository;
 
-        public ICategoryRepository Category => _categoryRepository;
+        public ICategoryRepository CategoryRepository => _categoryRepository;
 
         public void Save()
         {
