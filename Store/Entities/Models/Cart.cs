@@ -8,7 +8,7 @@ namespace Entities.Models
             Lines = new List<CartLine>();
         }
 
-        public void AddItem(Product product, int quantity)
+        public virtual void AddItem(Product product, int quantity)
         {
             // Eklenecek ürün sepette mevcut mu diye konmtrol edilir. 
             // Mevcut ise miktarı artırılacak, değilse eklenecektir.
@@ -26,12 +26,12 @@ namespace Entities.Models
             }
         }
 
-        public void RemoveLine(Product product) =>
+        public virtual void RemoveLine(Product product) =>
             Lines.RemoveAll(l => l.Product.ProductId == product.ProductId);
 
         public decimal ComputeTotalValue() => 
             Lines.Sum(e => e.Product.Price * e.Quantity);
 
-        public void Clear() => Lines.Clear();
+        public virtual void Clear() => Lines.Clear();
     }
 }

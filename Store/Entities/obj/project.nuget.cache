@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P9N5ejU4cP5Nx6ksm+v1eIZMwMMEZUB4sf/ShtEUoBKYeWsPdRryrQuvevv8NJtZJ0ikLrBoT4LgFQib/ng53Q==",
+  "dgSpecHash": "ksJYLOnsoQ8=",
   "success": true,
-  "projectFilePath": "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\MVC\\Store\\Entities\\Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

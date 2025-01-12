@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\GitHub\\ArelUniversityWebRepo\\Store\\StoreApp\\StoreApp.csproj": {}
+    "C:\\MVC\\Store\\StoreApp\\StoreApp.csproj": {}
   },
   "projects": {
-    "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Entities\\Entities.csproj": {
+    "C:\\MVC\\Store\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\MVC\\Store\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Entities\\Entities.csproj",
+        "projectPath": "C:\\MVC\\Store\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\durhangabrali\\.nuget\\packages\\",
-        "outputPath": "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Entities\\obj\\",
+        "outputPath": "C:\\MVC\\Store\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\durhangabrali\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -50,18 +55,23 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Repositories\\Repositories.csproj": {
+    "C:\\MVC\\Store\\Repositories\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Repositories\\Repositories.csproj",
+        "projectUniqueName": "C:\\MVC\\Store\\Repositories\\Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Repositories\\Repositories.csproj",
+        "projectPath": "C:\\MVC\\Store\\Repositories\\Repositories.csproj",
         "packagesPath": "C:\\Users\\durhangabrali\\.nuget\\packages\\",
-        "outputPath": "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Repositories\\obj\\",
+        "outputPath": "C:\\MVC\\Store\\Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\durhangabrali\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -78,8 +88,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Entities\\Entities.csproj": {
-                "projectPath": "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Entities\\Entities.csproj"
+              "C:\\MVC\\Store\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\MVC\\Store\\Entities\\Entities.csproj"
               }
             }
           }
@@ -88,11 +98,26 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -104,18 +129,23 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Services\\Services.csproj": {
+    "C:\\MVC\\Store\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\MVC\\Store\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Services\\Services.csproj",
+        "projectPath": "C:\\MVC\\Store\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\durhangabrali\\.nuget\\packages\\",
-        "outputPath": "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Services\\obj\\",
+        "outputPath": "C:\\MVC\\Store\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\durhangabrali\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -132,11 +162,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Entities\\Entities.csproj": {
-                "projectPath": "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Entities\\Entities.csproj"
+              "C:\\MVC\\Store\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\MVC\\Store\\Entities\\Entities.csproj"
               },
-              "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Repositories\\Repositories.csproj": {
-                "projectPath": "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Repositories\\Repositories.csproj"
+              "C:\\MVC\\Store\\Repositories\\Repositories.csproj": {
+                "projectPath": "C:\\MVC\\Store\\Repositories\\Repositories.csproj"
               }
             }
           }
@@ -145,11 +175,22 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -161,18 +202,23 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\GitHub\\ArelUniversityWebRepo\\Store\\StoreApp\\StoreApp.csproj": {
+    "C:\\MVC\\Store\\StoreApp\\StoreApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GitHub\\ArelUniversityWebRepo\\Store\\StoreApp\\StoreApp.csproj",
+        "projectUniqueName": "C:\\MVC\\Store\\StoreApp\\StoreApp.csproj",
         "projectName": "StoreApp",
-        "projectPath": "E:\\GitHub\\ArelUniversityWebRepo\\Store\\StoreApp\\StoreApp.csproj",
+        "projectPath": "C:\\MVC\\Store\\StoreApp\\StoreApp.csproj",
         "packagesPath": "C:\\Users\\durhangabrali\\.nuget\\packages\\",
-        "outputPath": "E:\\GitHub\\ArelUniversityWebRepo\\Store\\StoreApp\\obj\\",
+        "outputPath": "C:\\MVC\\Store\\StoreApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\durhangabrali\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -189,14 +235,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Entities\\Entities.csproj": {
-                "projectPath": "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Entities\\Entities.csproj"
+              "C:\\MVC\\Store\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\MVC\\Store\\Entities\\Entities.csproj"
               },
-              "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Repositories\\Repositories.csproj": {
-                "projectPath": "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Repositories\\Repositories.csproj"
+              "C:\\MVC\\Store\\Repositories\\Repositories.csproj": {
+                "projectPath": "C:\\MVC\\Store\\Repositories\\Repositories.csproj"
               },
-              "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Services\\Services.csproj": {
-                "projectPath": "E:\\GitHub\\ArelUniversityWebRepo\\Store\\Services\\Services.csproj"
+              "C:\\MVC\\Store\\Services\\Services.csproj": {
+                "projectPath": "C:\\MVC\\Store\\Services\\Services.csproj"
               }
             }
           }
@@ -205,11 +251,24 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -221,7 +280,15 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
